@@ -1,0 +1,20 @@
+[
+  {
+    "Classification": "spark",
+    "Properties": {
+      "spark.master":"yarn", 
+      "spark.submit.deployMode":"cluster",
+      "spark.driver.memory":"4g",
+      "spark.executor.memory":"6g",
+      "spark.driver.cores":"1",
+      "spark.executor.cores":"5",
+      "spark.dynamicAllocation.enabled" : "true",
+      "spark.dynamicAllocation.initialExecutors":"25",
+      "spark.dynamicAllocation.minExecutors":"10",    
+      "spark.dynamicAllocation.maxExecutors":"100",
+      "spark.sql.shuffle.partitions":"500",                                                                                                                                                                                                                                                                                                                                             
+      "spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version":"2",
+      "spark.hadoop.fs.s3a.block.size":"512M"
+    }
+  }
+]

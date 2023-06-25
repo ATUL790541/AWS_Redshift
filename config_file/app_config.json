@@ -1,0 +1,50 @@
+{
+  "transformation-dataset": {
+    "source": {
+      "data-location": "s3://rising-cubs-landing-bucket/dataset/",
+      "file-format": "parquet"
+    },
+    "destination": {
+      "data-location": "s3://rising-cubs-staging-bucket/dataset/",
+      "file-format": "parquet"
+    },
+    "datasets": [
+      "Actives.parquet"
+    ],
+    "spark_job_path": [
+      "s3://rising-cubs-landing-bucket/spark_job/cubs_job.py"
+    ],
+    "masking-cols": {
+      "mask": {
+        "col1": {
+          "name": "advertising_id"
+        },
+        "col2": {
+          "name": "user_id"
+        }
+      }
+    },
+    "transformation-cols": {
+      "to_comma": {
+        "col1": {
+          "name": "location_source",
+          "to": ","
+        }
+      },
+      "to_decimal": {
+        "col1": {
+          "name": "user_latitude",
+          "to": "Decimal(12,7)"
+        },
+        "col2": {
+          "name": "user_longitude",
+          "to": "Decimal(12,7)"
+        }
+      }
+    },
+    "partition-cols": [
+      "month_part",
+      "date_part"
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+{
+    "schema":"create table IF not EXISTS risingcubs_redshift_schema.actives (advertising_id VARCHAR,city VARCHAR,location_category VARCHAR,location_granularities VARCHAR,location_source VARCHAR,state VARCHAR,timestamp int,user_id VARCHAR,user_latitude decimal(12,7),user_longitude decimal(12,7),date date,month VARCHAR,masked_advertising_id VARCHAR,masked_user_id VARCHAR)"
+}
