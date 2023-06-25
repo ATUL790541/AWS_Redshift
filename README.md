@@ -1,4 +1,4 @@
-# Star Project Simulation
+# AWS USE CASE
 
 ![Picture1](https://github.com/ATUL790541/AWS_Redshift/assets/75777816/0dc92b63-b077-4cd5-808c-99fa2461db66)
 
